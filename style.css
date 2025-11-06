@@ -1,0 +1,26 @@
+:root {
+  --bg:#0b0b0b;
+  --glass: rgba(255,255,255,0.06);
+  --accent: linear-gradient(90deg,#00f5ff,#ff3dbe);
+  --muted: #bfc6d0;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+body{background:var(--bg);color:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.screen{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;padding:24px}
+.hidden{display:none}
+#intro h1{font-size:3rem;background:var(--accent);-webkit-background-clip:text;background-clip:text;color:transparent}
+#intro p{opacity:0.9}
+button{background:#111;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;color:#fff;cursor:pointer}
+button:hover{transform:scale(1.02)}
+.topbar{position:fixed;top:14px;left:14px;right:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;z-index:50}
+.topbar .center{flex:1;text-align:center;opacity:0.9}
+.topbar .left,.topbar .right{display:flex;align-items:center;gap:8px}
+#canvasArea{width:100vw;height:100vh;background-size:cover;background-position:center;position:relative;display:flex;align-items:center;justify-content:center}
+#profileCard{background:linear-gradient(180deg,rgba(0,0,0,0.35),rgba(0,0,0,0.4));padding:22px;border-radius:14px;backdrop-filter:blur(6px);box-shadow:0 10px 30px rgba(0,0,0,0.6);min-width:320px;text-align:center}
+.footer{position:fixed;bottom:16px;left:16px;opacity:0.75;font-size:0.9rem}
+input[type=file]{display:inline-block}
+@media(max-width:640px){
+  #intro h1{font-size:2.2rem}
+  .topbar{left:8px;right:8px}
+}
