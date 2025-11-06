@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>zew0o0/dev</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Intro -->
+  <div id="intro" class="screen">
+    <h1>zew0o0 / dev</h1>
+    <p>click to enter</p>
+    <button id="enterBtn">Enter</button>
+  </div>
+
+  <!-- Main app -->
+  <div id="app" class="hidden">
+    <div class="topbar">
+      <div class="left">
+        <button id="backBtn" title="Back to intro">Intro</button>
+      </div>
+      <div class="center">zew0o0/dev — your private page</div>
+      <div class="right">
+        <input id="fileInput" type="file" accept="image/*" />
+        <button id="pasteBtn">Paste Image</button>
+        <button id="resetBtn">Reset</button>
+        <button id="exportBtn">Export</button>
+        <input id="importFile" type="file" accept="application/json" style="display:none"/>
+        <button id="importBtn">Import</button>
+      </div>
+    </div>
+
+    <main id="canvasArea">
+      <div id="profileCard">
+        <h2>@zew0o0</h2>
+        <p>private page — only stored in your browser</p>
+      </div>
+    </main>
+
+    <footer class="footer">Tip: Upload a background or paste an image (Ctrl+V). Export settings to save a backup.</footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
